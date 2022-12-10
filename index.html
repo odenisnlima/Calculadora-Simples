@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <main>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Calculadora Simples</title>
+    <script src="index.js"> </script>
+</head>
+<body>
+    <h3 div>
+        Calculadora Simples
+    </h3>
+    <form name="calc">
+        <table border="9">
+            <tr>
+                <td colspan="4">
+                    <input type="text" name="display" id="visor" value=""readonly>
+                    </tr>
+                </td>
+                <td>
+                    
+            <input type="button" value="0" onclick="calc.display.value= '0'">
+                </td>  
+                <td>
+                    <input type="button" value="1" onclick="calc.display.value= '1'">
+                    <td>
+                        <input type="button" value="2" onclick="calc.display.value= '2'">
+                        <td>
+                        <input type="button" class="operador" name="mais" value="+"
+                        onclick="calc.display.value+='+'">
+                        </td>
+                        <tr>
+                            <td>
+                                    <input type="button" value="3" onclick="calc.display.value= '3'">
+                                    </td>
+                                    <td>
+                                        <input type="button" value="4" onclick="calc.display.value= '4'">
+                                        </td>
+                                        <td>
+                                            <input type="button" value="5" onclick="calc.display.value= '5'">
+                                            </td>
+                            <td>
+                                            <input type="button" class="operador" name="menos" value="-"
+                        onclick="calc.display.value+='-'">
+                            </td>
+                        <tr>
+                                <td>
+                                    <input type="button" value="6" onclick="calc.display.value= '6'">
+                                    </td>
+                                    <td>
+                                        <input type="button" value="7" onclick="calc.display.value= '7'">
+                                        </td>
+                                        <td>
+                                            <input type="button" value="8" onclick="calc.display.value= '8'">
+                                            </td>
+                                            <td>
+                                            <input type="button" class="operador" name="mult" value="*"
+                        onclick="calc.display.value+='*'">
+                        
+                            </tr>
+                          <tr> 
+                                
+                                <tr>
+                                    <td>
+                                        <input type="button" value="9" onclick="calc.display.value= '9'">
+                                        </td>
+                                        <td>
+                                            <input type="button" id="limpar" name="limpar" value="c"
+                        onclick="calc.display.value+=''">
+                                </td>
+                                <td>
+                                    <input type="button" class="operador" name="igual" value="="
+                onclick="calc.display.value =eval(calc.display.value)">
+                            
+    
+                                <td>
+                                    <input type="button" class="operador" name="div" value="/"
+                onclick="calc.display.value+='/'">
+                    </td>
+                            
+                        </tr>
+
+                    
+                        
+
+                     
+
+        </table>
+        </main>
+</form>
+    </form>
+</body>
+</html>
